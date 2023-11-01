@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Attendance-Data.css">
+    <script src="Attendance-Data.js" type="module"></script>
+    <script src="appFunctions.js" defer type="module"></script>
+</head>
+<body>
+    <div id="body">
+        <nav id="top_nav">
+            <div class="left-nav">
+            </div>
+            <div class="right-nav">
+              <span class="nav-link" id="minimize">&minus;</span>
+              <span class="nav-link" id="maximize">&EmptySmallSquare;</span>
+              <span class="nav-link" id="close-app">&#10006;</span>
+            </div>
+        </nav>
+
+     
+        <div id="searchbar">
+            <input type="search" name="Search" id="Search-data" placeholder="Search...">
+            <div style="width: 30%;"></div>
+        </div>
+        <div id="main-body">
+            <div id="data-body">
+                      <table id="data-table">
+                <tr>
+                  <th>S/N</th>
+                  <th>Name</th>
+                  <th>Ministry</th>
+                  <th>Arm</th>
+                  <th>Arrival Time</th>
+                </tr>
+              </table>
+            </div>
+
+            <div id="topbar">
+                <div id="attendance-list">
+                    <img src="Icons/calendar-check-solid.svg" alt="" class="topbar-icon">
+                    <p class="topbar-name">Attendance</p>
+                </div>
+                <div id="export">
+                    <img src="Icons/file-export-solid.svg" alt="" class="topbar-icon">
+                    <p class="topbar-name">Export Data(XLSX)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

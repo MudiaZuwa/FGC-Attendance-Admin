@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js" type="module"></script>
+    <script src="appFunctions.js" defer type="module"></script>
+</head>
+<body>
+    <div id="body">
+        <nav id="top_nav">
+            <div class="left-nav">
+            </div>
+            <div class="right-nav">
+              <span class="nav-link" id="minimize">&minus;</span>
+              <span class="nav-link" id="maximize">&EmptySmallSquare;</span>
+              <span class="nav-link" id="close-app">&#10006;</span>
+            </div>
+        </nav>
+        <div id="main-body">
+<form id="login-body">
+    <img src="icons/pic_1.png" alt="" style="  width: 80px; height: 80px; margin: auto;">
+    <div id="input-div">    
+            <input required class="boxes" type="password" placeholder="Password" id="password"/>
+            <img id="toggle" src="Icons/ic_visibility_off_black.png" alt="">
+        </div>
+        <button type="submit" id="submit">Login<div style="width: 16px; margin-left: 15px;"><div id="loader"></div> </div> </button>
+    </form>
+        </div>
+    </div>
+</body>
+</html>

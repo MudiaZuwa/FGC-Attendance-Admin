@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    background-color: #468FC8;
+    overflow-y: hidden;
+    padding: 0 3px 3px 3px;
+} 
+#main-body, #body{
+    height: 100%;
+}
+#topbar{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px 0;
+    margin-bottom: 101px;
+    justify-content: space-evenly;
+    width:30%;
+}
+
+#topbar div{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-top:8px ;
+    cursor: pointer;
+    background-color: #468FC8;
+}
+#topbar div:hover{
+    box-shadow: 0px 2px 5px black;
+}
+
+#topbar div p{
+    font-size: 2vw;
+    color: white;
+}
+
+#main-body{
+    display: flex;
+    -webkit-app-region:no-drag;
+    background-color: white;
+}
+
+.topbar-icon{
+    width: 1.5vw;
+    height: 1.5vw;
+    object-fit: scale-down;
+    margin-left:0.5vw;
+    filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(5deg) brightness(110%) contrast(100%);
+}
+
+#searchbar{
+    display: flex;
+    -webkit-app-region:no-drag;
+    background-color: #468FC8;
+    justify-content: center;
+}
+
+#Search-data{
+    margin: 10px 5px;
+    width: 40%;
+    font-size: 18px;
+    padding: 0 5px;
+    padding: 8px;
+}
+
+#top_nav{
+    width:100%;
+    background-color: #468FC8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    height:40px;
+}
+body{
+    -webkit-app-region:drag;
+}
+.nav-link{
+    cursor:pointer;
+    color:white;
+    padding: 10px;
+    font-size:1.1rem;
+    -webkit-app-region:no-drag;
+}
+.nav-link:hover{
+    background-color: white;
+    color:#458fc7 ;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items: center;
+    height: fit-content;
+  }
+
+  #data-body{
+    width: 60%;
+    margin:20px auto;
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+}
+
+#data-table{
+    width: 100%;
+}

@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+html,body{
+    background-color: #468FC8;
+} 
+#body{
+    background-color: white;
+}
+
+#top_nav{
+    width:100%;
+    background-color: #468FC8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    height:40px;
+}
+body{
+    -webkit-app-region:drag;
+}
+.nav-link{
+    cursor:pointer;
+    color:white;
+    padding: 10px;
+    font-size:1.1rem;
+    -webkit-app-region:no-drag;
+}
+.nav-link:hover{
+    background-color: white;
+    color:#468FC8;
+}
+
+#form-body{
+    padding-top: 40px;
+    -webkit-app-region:no-drag;
+    background-color: white;
+}
+
+
+form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-pic > img{
+width: 180px; 
+    border-radius: 40%;
+    height: 180px;
+    object-fit: contain;
+    padding-top: 80px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.name > input{
+    width: 187px;
+}
+
+.number{
+  display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 40px;
+   margin-bottom: 30px;
+}
+.number > input{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.dob{
+display: flex; 
+margin-bottom: 30px;
+gap: 40px;
+align-items: center;
+}
+
+.dob > input{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.dob > select{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+
+.selection{
+display: flex; 
+margin-bottom: 30px;
+gap: 30px;
+}
+
+.selection > select{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.back-btn{
+    display:flex;
+    justify-content: flex-start;  
+    margin: 20px;
+    margin-left: 35px;
+}
+
+#back-page{
+    width: 30px;
+    height: 30px;
+    object-fit: scale-down;
+}
+
+form input{
+    display: block;
+   font-size: 18px;
+   margin-bottom: 30px;
+   padding: 10px;
+     border-radius:3px;
+  border:1px solid grey;
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin:10px 0px
+}
+
+.btn > button {
+  color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #468FC8;
+    padding: 15px 40px;
+    border: none;    
+}
+
+.btn > button:hover {
+ background-color: #468Fba;
+
+}
+
+.btn > button:hover {
+ background-color: #468Fb1;
+
+}
+
+#loader{
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #468FC8;
+     border-radius:50% ;
+     width: 20px;
+     height: 20px;
+     animation: spin 2s linear infinite alternate;
+    margin: auto;
+    display: none;
+}
+
+@keyframes spin{
+0%{
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(1080deg);
+}
+}

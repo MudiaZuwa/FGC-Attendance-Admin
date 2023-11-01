@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Attendance-list.css">
+    <script src="Attendance-list.js" type="module"></script>
+    <script src="appFunctions.js" defer type="module"></script>
+</head>
+<body>
+    <div id="body">
+        <nav id="top_nav">
+            <div class="left-nav">
+            </div>
+            <div class="right-nav">
+              <span class="nav-link" id="minimize">&minus;</span>
+              <span class="nav-link" id="maximize">&EmptySmallSquare;</span>
+              <span class="nav-link" id="close-app">&#10006;</span>
+            </div>
+        </nav>
+
+     
+        <div id="searchbar">
+            <input type="search" name="Search" id="Search-data" placeholder="Search...">
+            <div style="width: 30%;"></div>
+        </div>
+        <div id="main-body">
+            <div id="data-body">
+                <div id="data-subbody">
+               
+             
+                </div>
+            </div>
+            <div id="topbar">
+                <div id="attendance-list">
+                    <img src="Icons/house-solid.svg" alt="" class="topbar-icon">
+                    <p class="topbar-name">Home</p>
+                </div>
+                <div id="export">
+                    <img src="Icons/file-export-solid.svg" alt="" class="topbar-icon">
+                    <p class="topbar-name">Export Data(XLSX)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

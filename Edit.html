@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edit.css">
+    <script src="edit.js" type="module"></script>
+    <script src="appFunctions.js" defer type="module"></script>
+</head>
+<body>
+    <div id="body">
+        <nav id="top_nav">
+            <div class="left-nav">
+            </div>
+            <div class="right-nav">
+              <span class="nav-link" id="minimize">&minus;</span>
+              <span class="nav-link" id="maximize">&EmptySmallSquare;</span>
+              <span class="nav-link" id="close-app">&#10006;</span>
+            </div>
+        </nav>
+        <div id="main-body">
+            <div class="back-btn">
+                <img src="icons/backPng.png" id="back-page" alt="">
+            </div>
+            <div id="form-body">
+                <form action="" id="data-form">
+                  <div class="profile-pic">
+                    <img src="Icons/defaul_1.png" alt="">
+                    </div>
+                    <div class="inputs">
+                        <div class="name">
+                    <input required type="text" name="First Name" placeholder="First Name"  id="first">
+                    <input required type="text" name="Last Name" placeholder="Last Name"  id="last">
+                </div>
+                    <input type="text" name="Middle Name" placeholder="Other Names"  id="middle">
+                    <input type="text" name="Address" placeholder="Home Address"  id="address">
+                    <div class="number">
+                        <span>+234</span>
+                        <input class="boxes" type="tel" placeholder="Phone Number"id="phone"/>
+                    </div> 
+
+                   
+                    
+                    <div class="dob">
+                        <span>D.O.B</span>
+                        <input type="date" name="date" id="date">
+                 
+                        </div>
+                    <div class="selection"> 
+                        <select required  id="ministry">
+                        <option value="Ministry"disabled selected>Ministry</option>
+                        <option value="Music">Music</option>
+                        <option value="Usher">Usher</option>
+                        <option value="Protocol">Protocol</option>
+                        <option value="Technical">Technical</option>
+                        <option value="Media">Media</option>
+                        <option value="Children">Children</option>
+                    </select>
+                    <select required  id="arms">
+                       <option value="Ministry" disabled selected>Arms</option>
+                       <option value="Men">Men</option>
+                       <option value="Women">Women</option>
+                       <option value="Youths">Youths</option>
+                       <option value="Teenagers">Teenagers</option>
+                   </select>
+                      </div>
+                      <p id="error" style="color: red; display:none;">User Already Exist</p>
+                 
+                      <div class="btn">
+                        <button type="submit" id="submit" style="display:flex">Submit<div style="width: 16px; margin-left: 15px;"><div id="loader"></div> </div></button>
+                         </div>
+                   </div>
+                      </form>
+                       </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
